@@ -1,0 +1,36 @@
+﻿@model Philnance.Models.FinanceNews;
+@{
+    var nextOffset = @Model.Pagination.Count + @Model.Pagination.Offset;
+}
+<div class="row d-flex justify-content-center mt-70 mb-70">
+          <div class="col-md-12">
+            <div class="main-card mb-3 card">
+                 <div class="card-body">
+                    <h5 class="card-title">Live Finance News</h5>
+                     @foreach (var item in Model.Data)
+        {
+            <div class="vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                        <div class="vertical-timeline-item vertical-timeline-element">
+                            <div>
+                               <span class="vertical-timeline-element-icon bounce-in">
+                                 <i class="badge badge-dot badge-dot-xl badge-success"> </i>
+                               </span>
+                                <div class="vertical-timeline-element-content bounce-in">
+
+                                   <h4 class="timeline-title"> <a href="@item.Url" target="_blank">@item.Title</a></h4>
+                                       <p>@item.Description</p>
+                                          <span class="vertical-timeline-element-date">@item.PublishedAt.ToShortDateString()
+                                            <br />
+                                                @item.PublishedAt.ToShortTimeString()</span>
+                                </div>
+                          </div>
+                        </div>
+                     </div>
+        }
+                    
+                 </div>
+            </div>        
+        </div>
+        </div>
+<a class="btn btn-info" asp-action="LoadMoreNews" asp-route-offset="0">Get Latest</a>
+<a class="btn btn-secondary" asp-action="LoadMoreNews" asp-route-offset="@nextOffset">More News</a>
