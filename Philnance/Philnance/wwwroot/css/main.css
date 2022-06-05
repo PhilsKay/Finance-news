@@ -133,3 +133,9 @@
             color: red ;
             text-decoration: none;
         }
+
+.source {
+    color: #adb5bd;
+    font-size: .7619rem;
+    white-space: nowrap;
+}
