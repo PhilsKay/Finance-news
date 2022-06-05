@@ -1,6 +1,4 @@
 ﻿body {
-}
-body {
     background-color: #eee;
 }
 
@@ -126,3 +124,12 @@ body {
         display: table;
         clear: both;
     }
+    a{
+        color:navy;
+        text-decoration: none;
+
+    }
+        a:visited, a:hover {
+            color: red ;
+            text-decoration: none;
+        }

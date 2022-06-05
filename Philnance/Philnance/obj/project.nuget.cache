@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gkGtHUsYUFY92JFkQSaNP2HM21C4XholUTecP1Ql5Zc0D1FLICdIS28kRXZ2T57lhn8qnCEQ/rde/SOZeHm7ww==",
+  "dgSpecHash": "HqAl9zFIAUvtVqtcfeEz9ff4FByMj9MefVZgj0g9kJE6g6gkHQyBbihxgS4nU2Xc/j6F52srOECoBMp1V7dWcQ==",
   "success": true,
-  "projectFilePath": "C:\\openSource\\Philnance\\Philnance\\Philnance.csproj",
+  "projectFilePath": "C:\\openSource\\Finance-news\\Philnance\\Philnance\\Philnance.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danikay tech\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

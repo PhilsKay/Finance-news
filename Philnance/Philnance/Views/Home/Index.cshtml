@@ -1,6 +1,6 @@
 ﻿@model Philnance.Models.FinanceNews;
 @{
-    var nextOffset = @Model.Pagination.Count + @Model.Pagination.Offset;
+   var nextOffset = @Model.Pagination.Count + @Model.Pagination.Offset;
 }
 <div class="row d-flex justify-content-center mt-70 mb-70">
           <div class="col-md-12">
@@ -16,12 +16,20 @@
                                  <i class="badge badge-dot badge-dot-xl badge-success"> </i>
                                </span>
                                 <div class="vertical-timeline-element-content bounce-in">
-
-                                   <h4 class="timeline-title"> <a href="@item.Url" target="_blank">@item.Title</a></h4>
+                                    <dl>
+                                           <dt class="timeline-title">
+                                               <a href="@item.Url" target="_blank">@item.Title</a>
+                                           </dt>
+                                           <dd>
                                        <p>@item.Description</p>
+                                           </dd>
+                                       </dl>
                                           <span class="vertical-timeline-element-date">@item.PublishedAt.ToShortDateString()
                                             <br />
-                                                @item.PublishedAt.ToShortTimeString()</span>
+                                                @item.PublishedAt.ToShortTimeString()
+                                            <br />
+                                            @item.Source
+                                                </span>
                                 </div>
                           </div>
                         </div>
@@ -32,5 +40,12 @@
             </div>        
         </div>
         </div>
-<a class="btn btn-info" asp-action="LoadMoreNews" asp-route-offset="0">Get Latest</a>
-<a class="btn btn-secondary" asp-action="LoadMoreNews" asp-route-offset="@nextOffset">More News</a>
+        <div class="row">
+            <div class="col">
+            <a class="btn btn-info w-100" asp-action="LoadMoreNews" asp-route-offset="0">Get Latest</a>
+
+            </div>
+            <div class="col">
+            <a class="btn btn-secondary w-100" asp-action="LoadMoreNews" asp-route-offset="@nextOffset">More News</a>
+            </div>
+        </div>

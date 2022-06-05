@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Philnance.Models;
-using Philnance.Models;
 using Philnance.Repository;
 using System.Diagnostics;
 
@@ -21,7 +20,7 @@ namespace Philnance.Controllers
         public IActionResult Index()
         {
             news = _financeNews.GetFinanceNews(0);
-            return View();
+            return View(news);
         }
 
         public IActionResult LoadMoreNews(int offset)

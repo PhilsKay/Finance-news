@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\openSource\\Philnance\\Philnance\\Philnance.csproj",
+      "projectUniqueName": "C:\\openSource\\Finance-news\\Philnance\\Philnance\\Philnance.csproj",
       "projectName": "Philnance",
-      "projectPath": "C:\\openSource\\Philnance\\Philnance\\Philnance.csproj",
+      "projectPath": "C:\\openSource\\Finance-news\\Philnance\\Philnance\\Philnance.csproj",
       "packagesPath": "C:\\Users\\danikay tech\\.nuget\\packages\\",
-      "outputPath": "C:\\openSource\\Philnance\\Philnance\\obj\\",
+      "outputPath": "C:\\openSource\\Finance-news\\Philnance\\Philnance\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danikay tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
